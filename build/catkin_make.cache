@@ -1,0 +1,2 @@
+manipulator_v1
+-DCATKIN_DEVEL_PREFIX=/home/varun/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/varun/catkin_ws/install -G Unix Makefiles

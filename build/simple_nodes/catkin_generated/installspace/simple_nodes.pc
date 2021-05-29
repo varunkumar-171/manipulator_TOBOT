@@ -1,0 +1,8 @@
+prefix=/home/varun/catkin_ws/install
+
+Name: simple_nodes
+Description: Description of simple_nodes
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

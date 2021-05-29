@@ -1,0 +1,8 @@
+prefix=/home/varun/catkin_ws/devel
+
+Name: manipulator_v1
+Description: Description of manipulator_v1
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
