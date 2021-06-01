@@ -18,6 +18,18 @@ hardware_interface:
 joint_state_controller:
   type: joint_state_controller/JointStateController
   publish_rate: 50
+
+arm_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - base_joint
+    - rev_joint1
+    - rev_joint2
+  gains:
+    base_joint: {p: 10000.0, i: 0.01, d: 1.0}
+    rev_joint1: {p: 10000.0, i: 0.01, d: 1.0}
+    rev_joint2: {p: 10000.0, i: 0.01, d: 1.0}
+
 controller_list:
   - name: arm_controller
     action_ns: follow_joint_trajectory
