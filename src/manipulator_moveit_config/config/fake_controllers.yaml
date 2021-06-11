@@ -2,9 +2,9 @@ controller_list:
   - name: fake_arm_controller
     type: $(arg execution_type)
     joints:
-      - base_joint
-      - rev_joint1
-      - rev_joint2
+      - num_piston_joint
+      - mid_link_joint
+      - end_link_joint
 initial:  # Define initial robot poses.
   - group: arm
     pose: home

@@ -1,6 +1,6 @@
 <launch>
 	<arg name="model" />
-	<param name="robot_description" textfile="$(find manipulator_v1)/manipulator_description/arm/urdf/arm.urdf" />
+	<param name="robot_description" textfile="$(find manipulator_v1)/manipulator_description/arm/urdf/robarm.urdf" />
 
     <arg name="use_gui" default="true" doc="Should the joint_state_publisher use a GUI for controlling joint states" />
     

@@ -9,9 +9,10 @@ generic_hw_control_loop:
 # Settings for ros_control hardware interface
 hardware_interface:
   joints:
-    - base_joint
-    - rev_joint1
-    - rev_joint2
+    - num_base_joint
+    - num_piston_joint
+    - mid_link_joint
+    - end_link_joint
   sim_control_mode: 1  # 0: position, 1: velocity
 # Publish all joint states
 # Creates the /joint_states topic necessary in ROS
@@ -24,6 +25,6 @@ controller_list:
     default: True
     type: FollowJointTrajectory
     joints:
-      - base_joint
-      - rev_joint1
-      - rev_joint2
+      - num_piston_joint
+      - mid_link_joint
+      - end_link_joint

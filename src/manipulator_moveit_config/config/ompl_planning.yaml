@@ -153,5 +153,5 @@ arm:
     - LazyPRMstar
     - SPARS
     - SPARStwo
-  projection_evaluator: joints(base_joint,rev_joint1)
+  projection_evaluator: joints(num_piston_joint,mid_link_joint)
   longest_valid_segment_fraction: 0.005
