@@ -9,7 +9,6 @@ generic_hw_control_loop:
 # Settings for ros_control hardware interface
 hardware_interface:
   joints:
-    - num_base_joint
     - num_piston_joint
     - mid_link_joint
     - end_link_joint
@@ -24,6 +23,13 @@ controller_list:
     action_ns: follow_joint_trajectory
     default: True
     type: FollowJointTrajectory
+    joints:
+      - num_piston_joint
+      - mid_link_joint
+      - end_link_joint
+
+arm_controller:
+    type: position_controllers/JointTrajectoryController
     joints:
       - num_piston_joint
       - mid_link_joint

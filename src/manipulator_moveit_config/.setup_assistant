@@ -1,11 +1,11 @@
 moveit_setup_assistant_config:
   URDF:
-    package: ""
-    relative_path: /home/varun/manipulator_TOBOT/src/robarm.urdf
+    package: "manipulator_v1"
+    relative_path: manipulator_description/arm/urdf/robarm.urdf
     xacro_args: ""
   SRDF:
     relative_path: config/arm.srdf
   CONFIG:
     author_name: varun
     author_email: varunkumar.siva@gmail.com
-    generated_timestamp: 1623327554
+    generated_timestamp: 1625321809

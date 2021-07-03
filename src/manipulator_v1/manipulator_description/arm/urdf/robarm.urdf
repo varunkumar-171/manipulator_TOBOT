@@ -11,7 +11,7 @@
         xyz="0.00089876 -6.4996E-19 0.021715"
         rpy="0 0 0" />
       <mass
-        value="0.36165" />
+        value="100.36165" />
       <inertia
         ixx="0.00049389"
         ixy="2.4965E-23"
@@ -316,10 +316,8 @@
   <!-- ros_controll_plugin -->
   <gazebo>
       <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-          <robotNamespace>/arm</robotNamespace> 
-          <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType> 
+          <robotNamespace>/</robotNamespace> 
       </plugin>
   </gazebo>
-  
   
 </robot>
