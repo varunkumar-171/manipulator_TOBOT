@@ -73,7 +73,7 @@ class MoveGroup(object):
         self.eef_link = 'end_effector'
         self.group_names = group_names
 
-        def all_close(goal, actual, tolerance):
+    def all_close(goal, actual, tolerance):
             
             all_equal = True
             if type(goal) is list:
@@ -90,7 +90,7 @@ class MoveGroup(object):
 
             return True
 
-        def go_to_pose_goal(self):
+    def go_to_pose_goal(self):
 
             group = self.group
 
