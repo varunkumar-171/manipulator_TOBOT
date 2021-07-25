@@ -20,6 +20,7 @@
           </mesh>
         </geometry>
       </visual>
+      <static>true</static>
       <sensor name="camera" type="depth">
         <update_rate>20</update_rate>
         <camera>
