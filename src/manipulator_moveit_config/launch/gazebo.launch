@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <launch>
-  <arg name="paused" default="false"/>
+  <arg name="paused" default="true"/>
   <arg name="gazebo_gui" default="true"/>
-  <arg name="urdf_path" default="/home/varun/manipulator_TOBOT/src/robarm.urdf"/>
+  <arg name="urdf_path" default="$(find manipulator_v1)/manipulator_description/arm/urdf/robarm.urdf"/>
 
   <!-- startup simulated world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
